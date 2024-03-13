@@ -3,6 +3,6 @@
     $config = array(
         'localhost',
         'root',
-        'J43_/brrI*8gJHPb',
+        '',
         'shop_db'
     );
