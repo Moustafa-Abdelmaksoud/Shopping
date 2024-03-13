@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+.message{
+    position: sticky;
+    top:0; left:0; right:0;
+    padding:15px 10px;
+    background-color: var(--white);
+    text-align: center;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+    color:var(--black);
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+h1 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+tfoot td {
+    font-weight: bold;
+    text-align: center;
+}
+
+.actions {
+    text-align: center;
+}
+/*----------------ADD FORM----------------*/
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+form {
+    width: 300px;
+    border: 1px solid #000;
+    padding: 20px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: calc(100% - 22px); /* Adjusting for padding and border */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+.error {
+    color: red;
+    font-size: 0.85em;
+}
+.hello {
+    color: #4CAF50; /* Sets the text color to a shade of green */
+    background-color: #f0f0f0; /* Light grey background for better visibility */
+    font-size: 18px; /* Sets the font size */
+    padding: 8px 12px; /* Adds some padding around the text */
+    border-radius: 5px; /* Rounds the corners of the background */
+    font-family: 'Arial', sans-serif; /* Sets the font style */
+    font-weight: bold; /* Makes the text bold */
+    display: inline-block; /* Ensures the background spans the text only */
+    margin: 10px 0; /* Adds some space above and below the element */
+    border: 1px solid #d4d4d4; /* Adds a light grey border */
+}
+
+
+/*----------------SEARCH----------------*/
+#search {
+    display: flex; 
+    flex-wrap: nowrap; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 100%; 
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+#search input[type="text"] {
+    flex-grow: 1; 
+    margin-right: 10px; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search input[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase; /* Optional style */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-top: 0px;
+}
+
+#search input[type="submit"]:hover {
+    background-color: #0056b3;
+}
