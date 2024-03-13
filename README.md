@@ -19,6 +19,12 @@ This project is a comprehensive e-commerce platform designed to provide users wi
 ## **Usage**
 
 Provide detailed instructions on how users can make the most out of your shopping platform, along with guidance for administrators on how to effectively use the admin panel. Consider including a few screenshots or a link to your video demo for a more visual guide.
+
 ## **Demo video**
 
 https://drive.google.com/file/d/1gkhP0s2BkOl1yWhsyt9g-O9oPJvH2LGi/view?t=1
+
+## **Website link**
+
+http://shoppingycart.infinityfreeapp.com/
+
