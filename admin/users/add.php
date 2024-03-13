@@ -17,7 +17,7 @@
     
     if(!$error_fields){
         // Open the connection
-        $conn = mysqli_connect("localhost", "root", "J43_/brrI*8gJHPb", "shop_db");
+        $conn = mysqli_connect("localhost", "root", "", "shop_db");
         if (! $conn) {
             echo mysqli_connect_error();
             exit;
