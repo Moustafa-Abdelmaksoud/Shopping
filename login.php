@@ -3,10 +3,10 @@ session_start();
 $error_fields = array();
 if (isset($_POST['submit'])) {
     //Validation
-    if (!(isset($_POST["email"]) && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))) {
+    if (!isset($_POST["email"]) || !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
         $error_fields[] = "email";
     }
-    if (!(isset($_POST["password"]) && strlen($_POST["password"] > 5))) {
+    if (!isset($_POST["password"]) || strlen($_POST["password"]) <= 5) {
         $error_fields[] = "password";
     }
     if (!$error_fields) {
