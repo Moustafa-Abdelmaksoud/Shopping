@@ -5,13 +5,13 @@
     if(($_SERVER['REQUEST_METHOD'] == 'POST')){
         if(($_SESSION['admin'])==1)
         {
-        if(!(isset($_POST["name"]) && !empty($_POST["name"]))){
-            $error_fields[] = "name";
+        if (!isset($_POST["name"]) || empty($_POST["name"])) {
+        $error_fields[] = "name";
         }
-        if(!(isset($_POST["email"]) && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))){
+        if (!isset($_POST["email"]) || !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
             $error_fields[] = "email";
         }
-        if(!(isset($_POST["password"]) && strlen($_POST["password"] > 5))){
+        if (!isset($_POST["password"]) || strlen($_POST["password"]) <= 5) {
             $error_fields[] = "password";
         }
     
