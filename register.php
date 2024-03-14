@@ -2,16 +2,16 @@
     $error_fields = array();
     if(isset($_POST['submit'])){
         //Validation
-        if(!(isset($_POST["name"]) && !empty($_POST["name"]))){
+        if (!isset($_POST["name"]) || empty($_POST["name"])) {
         $error_fields[] = "name";
         }
-        if(!(isset($_POST["email"]) && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL))){
+        if (!isset($_POST["email"]) || !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
             $error_fields[] = "email";
         }
-        if(!(isset($_POST["password"]) && strlen($_POST["password"] > 5))){
+        if (!isset($_POST["password"]) || strlen($_POST["password"]) <= 5) {
             $error_fields[] = "password";
         }
-        if((!(isset($_POST["cpassword"])) && (isset($_POST["cpassword"])&&(($_POST["cpassword"])!==($_POST["password"] ))))){
+        if (!isset($_POST["cpassword"]) || $_POST["cpassword"] !== $_POST["password"]) {
             $error_fields[] = "cpassword";
         }
         if(!$error_fields){
